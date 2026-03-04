@@ -4,7 +4,11 @@ export interface ZellijExecResult {
   exitCode: number;
 }
 
-async function readStream(reader: ReadableStreamDefaultReader<Uint8Array>): Promise<string> {
+interface TextReadable {
+  read(): Promise<{ done: boolean; value?: Uint8Array }>;
+}
+
+async function readStream(reader: TextReadable): Promise<string> {
   const decoder = new TextDecoder();
   let output = "";
 

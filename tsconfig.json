@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "lib": ["ESNext"],
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "bundler",
@@ -10,11 +11,7 @@
     "rootDir": ".",
     "declaration": true,
     "resolveJsonModule": true,
-    "types": ["bun-types"],
-    "paths": {
-      "@oh-my-pi/pi-coding-agent": ["./src/types/pi-coding-agent.ts"],
-      "@oh-my-pi/pi-coding-agent/*": ["../oh-my-pi/packages/coding-agent/src/*"]
-    }
+    "types": ["bun-types"]
   },
   "include": ["src/**/*.ts", "extensions/**/*.ts"],
   "exclude": ["node_modules", "dist"]

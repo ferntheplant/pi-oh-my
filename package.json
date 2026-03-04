@@ -11,9 +11,7 @@
     "check": "bun x tsc --noEmit"
   },
   "devDependencies": {
+    "@oh-my-pi/pi-coding-agent": "latest",
     "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "@oh-my-pi/pi-coding-agent": ">=13.0.0"
   }
 }
