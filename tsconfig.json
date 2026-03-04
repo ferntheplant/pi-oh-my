@@ -12,7 +12,7 @@
     "resolveJsonModule": true,
     "types": ["bun-types"],
     "paths": {
-      "@oh-my-pi/pi-coding-agent": ["../oh-my-pi/packages/coding-agent/src/index.ts"],
+      "@oh-my-pi/pi-coding-agent": ["./src/types/pi-coding-agent.ts"],
       "@oh-my-pi/pi-coding-agent/*": ["../oh-my-pi/packages/coding-agent/src/*"]
     }
   },
