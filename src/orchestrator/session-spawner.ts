@@ -25,7 +25,8 @@ export async function spawnSession(options: SpawnSessionOptions): Promise<Sessio
   const sessionKey: string = options.chunkId
     ? `${options.role}-${options.chunkId}`
     : options.role;
-  const zellijSessionName: string = `${options.tree.name}/${sessionKey}`;
+  // Zellij session names cannot contain "/".
+  const zellijSessionName: string = `${options.tree.name}__${sessionKey}`;
   const sessionDir: string = resolve(options.tree.treeDir, sessionKey);
 
   mkdirSync(sessionDir, { recursive: true });
