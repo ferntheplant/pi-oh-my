@@ -1,7 +1,7 @@
 import type { PersonaConfig, PersonaRole } from "./types";
 
-const RESEARCH_TOOLS: string[] = ["read", "bash", "grep", "find", "ls"];
-const RESEARCH_WITH_WEB_TOOLS: string[] = [...RESEARCH_TOOLS, "web_search", "fetch_content"];
+const RESEARCH_TOOLS: string[] = ["read", "bash", "grep", "find"];
+const RESEARCH_WITH_WEB_TOOLS: string[] = [...RESEARCH_TOOLS, "web_search", "fetch"];
 const DISABLE_PLAN_MODE_EXTENSION: string[] = ["extensions/disable-plan-mode.ts"];
 
 export const PERSONA_CONFIGS: Record<PersonaRole, PersonaConfig> = {
