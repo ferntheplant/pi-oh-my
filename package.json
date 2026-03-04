@@ -1,0 +1,19 @@
+{
+  "name": "pi-oh-my",
+  "module": "index.ts",
+  "type": "module",
+  "bin": {
+    "pom": "./src/cli.ts"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "bun src/cli.ts",
+    "check": "bun x tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "@oh-my-pi/pi-coding-agent": ">=13.0.0"
+  }
+}
